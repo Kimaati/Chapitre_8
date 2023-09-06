@@ -1,0 +1,25 @@
+footer {
+  height: 209px;
+  background-color: $BGColor-footer;
+  color: white;
+  position: relative;
+  top: 100%;
+  width: 100%;
+
+  img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  p {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    line-height: 34.22px;
+    font-family: $font-1-bold;
+  }
+}

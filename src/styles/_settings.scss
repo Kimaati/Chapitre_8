@@ -1,0 +1,43 @@
+// Fichier de style qui permet d'être utiliser dans n'importe qu'elle autre style. Pratique pour les mixins, les variables et autres fantaisies de SCSS
+
+// Font
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(../../public/assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-regular;
+  src: url(../../public/assets/fonts/Montserrat-Regular.ttf);
+}
+
+//Variables
+$font-1-bold: "Montserrat-bold", Arial;
+$font-2-reg: "Montserrat-regular", Arial;
+
+$color-1: #ff6060;
+$BGColor-footer: #000000;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-1-bold;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+  // font-family: $font-1;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}

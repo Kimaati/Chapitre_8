@@ -1,0 +1,28 @@
+.hero-banner {
+  position: relative;
+  margin: 0 80px;
+  background-color: $BGColor-footer;
+  mix-blend-mode: darken;
+  height: 223px;
+  border-radius: 25px;
+
+  img {
+    height: 223px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    opacity: 60%;
+  }
+
+  p {
+    width: 100%;
+    font-size: 48px;
+    line-height: 68.45px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

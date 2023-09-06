@@ -1,0 +1,20 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: $color-1;
+
+  h1 {
+    font-size: 36px;
+    line-height: 51.34px;
+  }
+
+  a {
+    font-size: 18px;
+    line-height: 25.67px;
+    text-decoration: none;
+    color: $color-1;
+  }
+}

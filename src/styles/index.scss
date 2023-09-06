@@ -1,0 +1,10 @@
+// Toujours importer en premier le fichier dans lequel il y aura les variables, mixins, autre fantaisies de SCSS et les paramètres de base de notre style. Dans ce cas-ci c'est le fichier settings.scss
+
+@import "./settings";
+@import "./components/navigation.scss";
+@import "./components/footer.scss";
+@import "./components/heroBanner.scss";
+@import "./pages/notFound.scss";
+@import "./components/card.scss";
+// @import "./components/faq.scss";
+@import "./components/accordeon.scss";
