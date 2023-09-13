@@ -1,28 +1,34 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 
-const Carrousel = () => {
-  const [data, setData] = useState([]);
+const Carrousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    axios
-      .get("./annonce.json")
-      .then((response) => {
-        setData(response.data);
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.error("Erreur lors de la récupération des données :", error);
-      });
-  }, []);
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
   return (
-    <div>
-      {data.map((item) => (
-        <div className="card-content" key={item.id} id={`card-${item.id} `}>
-          <img src={item.pictures} alt="" />
-        </div>
-      ))}
+    <div className="carrousel">
+      <button className="prev-button" onClick={prevSlide}>
+        &#10094;
+      </button>
+      <img
+        src={images[currentIndex]}
+        alt={`Slide ${currentIndex + 1}`}
+        className="slide"
+      />
+      <button className="next-button" onClick={nextSlide}>
+        &#10095;
+      </button>
+      <div className="indicator">{`${currentIndex + 1}/${images.length}`}</div>
     </div>
   );
 };

@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import LogoNav from "../assets/img/Logo-Kasa.png";
 
 const Navigation = () => {
   return (
     <header className="navigation">
       <div className="logo">
         {/* Les images importées depuis la balise IMG sont accessible dans "public" */}
-        <img src="./assets/img/Logo-Kasa.png" alt="Logo Kasa" />
+        <img src={LogoNav} alt="Logo Kasa" />
       </div>
       <ul>
         {/* La fonction ternair permet de mettre une classe quand l'élements est actif */}

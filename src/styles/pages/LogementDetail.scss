@@ -1,0 +1,23 @@
+.info-logement {
+  color: $color-1;
+  font-family: $font-2-reg;
+
+  .title-logement {
+    font-size: 36px;
+    line-height: 51.34px;
+  }
+
+  .location-logement {
+    font-size: 18px;
+    line-height: 25.67px;
+  }
+}
+
+.accordeon-logement {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .accorderon-un {
+    width: 100%;
+  }
+}
