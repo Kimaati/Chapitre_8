@@ -69,7 +69,7 @@ const Faq = () => {
   };
 
   return (
-    <div>
+    <div className="faq-about-accordeon">
       {faqData.map((item, index) => (
         <Accordeon
           key={index}

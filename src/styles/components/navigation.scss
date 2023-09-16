@@ -23,3 +23,25 @@
     text-decoration: underline;
   }
 }
+
+@media screen and (max-width: 415px) {
+  .navigation {
+    margin: 20px 20px;
+
+    .logo {
+      img {
+        width: 145px;
+      }
+    }
+
+    ul {
+      gap: 20px;
+    }
+
+    a {
+      li {
+        font-size: 20px;
+      }
+    }
+  }
+}

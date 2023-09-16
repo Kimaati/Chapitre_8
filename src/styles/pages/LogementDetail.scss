@@ -1,6 +1,7 @@
 .info-logement {
   color: $color-1;
-  font-family: $font-2-reg;
+  font-family: $font-1;
+  font-weight: 300;
 
   .title-logement {
     font-size: 36px;
@@ -13,11 +14,38 @@
   }
 }
 
-.accordeon-logement {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.tags-rating-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 80px;
 
-  .accorderon-un {
-    width: 100%;
+  .tags-container {
+    display: flex;
+    gap: 20px;
+    color: white;
+
+    span {
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: $color-1;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .tags-rating-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px 20px;
+    gap: 25px;
+    padding-bottom: 25px;
+
+    .tags-container {
+      gap: 25px;
+
+      span {
+        font-size: 13px;
+      }
+    }
   }
 }

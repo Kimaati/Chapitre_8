@@ -2,18 +2,12 @@
 
 // Font
 @font-face {
-  font-family: Montserrat-bold;
-  src: url(../../public/assets/fonts/Montserrat-Medium.ttf);
-}
-
-@font-face {
-  font-family: Montserrat-regular;
-  src: url(../../public/assets/fonts/Montserrat-Regular.ttf);
+  font-family: Montserrat-VariableFont_wght;
+  src: url(../../public/assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 //Variables
-$font-1-bold: "Montserrat-bold", Arial;
-$font-2-reg: "Montserrat-regular", Arial;
+$font-1: "Montserrat-VariableFont_wght", "Times New Roman";
 
 $color-1: #ff6060;
 $BGColor-footer: #000000;
@@ -22,7 +16,7 @@ $BGColor-footer: #000000;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: $font-1-bold;
+  font-family: $font-1;
 }
 
 html,
@@ -33,7 +27,6 @@ body {
 body {
   max-width: 1400px;
   margin: auto;
-  // font-family: $font-1;
   position: relative;
 }
 

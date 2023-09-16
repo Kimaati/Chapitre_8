@@ -1,16 +1,17 @@
 .info-logement {
   color: $color-1;
-  font-family: $font-2-reg;
+  font-family: $font-1;
+  font-weight: 500;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;
   margin: 20px 80px;
 
-  border: 1px solid rgb(78, 44, 1);
-
   .title-logement {
     font-size: 36px;
     line-height: 51.34px;
+    font-weight: 500;
+    margin-bottom: 10px;
   }
 
   .location-logement {
@@ -25,7 +26,7 @@
     align-items: center;
 
     .name {
-      font-family: $font-2-reg;
+      font-family: $font-1;
       font-size: 18px;
       line-height: 25.67px;
       padding-right: 10px;
@@ -35,6 +36,27 @@
       width: 64px;
       height: 64px;
       border-radius: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .info-logement {
+    margin: 20px 20px;
+
+    .title-logement {
+      font-size: 18px;
+      line-height: 25.67px;
+    }
+
+    .location-logement {
+      font-size: 14px;
+    }
+
+    .host {
+      .name {
+        width: 85px;
+      }
     }
   }
 }

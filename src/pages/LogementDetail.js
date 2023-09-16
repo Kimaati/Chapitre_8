@@ -6,7 +6,10 @@ import Carrousel from "../components/Carrousel";
 import annonce from "../data/annonce.json";
 import LogementInfo from "../components/LogementInfo";
 import Tag from "../components/Tag";
-import Accordeon from "../components/Accordeon";
+import Rating from "../components/Rating";
+import DescriptionAccordeon from "../components/DescriptionAccordeon";
+import EquipementAccordeon from "../components/EquipementAccordeon";
+// import styles from "../styles/components/accordeonLogement.scss";
 
 const LogementDetail = () => {
   const { id } = useParams();
@@ -19,14 +22,19 @@ const LogementDetail = () => {
       <Navigation />
       <Carrousel images={logement.pictures} />
       <LogementInfo />
-      <Tag />
-      <div className="accordeon-logement">
-        <Accordeon title="Descriptions" description={logement.description} />
-        <Accordeon
-          title="Équipements"
-          description={logement.equipments}
-          className="accordeon-deux"
-        />
+      <div className="tags-rating-container">
+        <div className="tags-container">
+          {logement.tags.map((tag, index) => (
+            <Tag key={index} tag={tag} />
+          ))}
+        </div>
+        <div className="rating-container">
+          <Rating rating={logement.rating} />
+        </div>
+      </div>
+      <div className="accordeon-logement-container">
+        <DescriptionAccordeon description={logement.description} />
+        <EquipementAccordeon equipments={logement.equipments} />
       </div>
       <Footer />
     </div>

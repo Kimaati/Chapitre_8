@@ -1,0 +1,17 @@
+.accordeon-logement-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 0px;
+  justify-content: space-between;
+  margin: 40px 80px;
+}
+
+@media screen and (max-width: 415px) {
+  .accordeon-logement-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 20px 20px;
+  }
+}

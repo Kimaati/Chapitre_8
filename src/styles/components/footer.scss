@@ -20,6 +20,18 @@ footer {
     transform: translate(-50%, -50%);
     font-size: 24px;
     line-height: 34.22px;
-    font-family: $font-1-bold;
+    font-family: $font-1;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  footer {
+    p {
+      top: 65%;
+      font-size: 12px;
+      width: 123px;
+      text-align: center;
+      line-height: 17.11px;
+    }
   }
 }

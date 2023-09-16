@@ -1,0 +1,13 @@
+.rating {
+  font-size: 24px;
+  color: #ff6060; // Couleur des étoiles remplies
+}
+
+.fa-star {
+  margin-right: 5px;
+}
+
+/* Style pour les étoiles vides (par défaut) */
+.fa-star:not(.filled) {
+  color: #ccc;
+}
