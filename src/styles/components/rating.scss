@@ -1,13 +1,21 @@
-.rating {
-  font-size: 24px;
-  color: #ff6060; // Couleur des étoiles remplies
-}
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
-.fa-star {
-  margin-right: 5px;
-}
+  .rating {
+    font-size: 24px;
+    color: #ff6060; // Couleur des étoiles remplies
+    display: flex;
+    flex-direction: row;
+  }
 
-/* Style pour les étoiles vides (par défaut) */
-.fa-star:not(.filled) {
-  color: #ccc;
+  .fa-star {
+    margin-right: 5px;
+  }
+
+  /* Style pour les étoiles vides (par défaut) */
+  .fa-star:not(.filled) {
+    color: #ccc;
+  }
 }

@@ -38,15 +38,39 @@
       border-radius: 50%;
     }
   }
+
+  .tags-rating-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 15px 0;
+
+    .tags-container {
+      display: flex;
+      gap: 20px;
+      color: white;
+
+      span {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $color-1;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 415px) {
   .info-logement {
-    margin: 20px 20px;
+    margin: 20px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
     .title-logement {
-      font-size: 18px;
+      font-size: 25px;
       line-height: 25.67px;
+      font-weight: 400;
     }
 
     .location-logement {
@@ -56,6 +80,22 @@
     .host {
       .name {
         width: 85px;
+      }
+    }
+
+    .tags-rating-container {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 10px 0;
+      gap: 25px;
+
+      .tags-container {
+        gap: 10px;
+
+        span {
+          padding: 6px;
+          font-size: 13px;
+        }
       }
     }
   }

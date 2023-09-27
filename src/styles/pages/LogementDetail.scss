@@ -13,39 +13,3 @@
     line-height: 25.67px;
   }
 }
-
-.tags-rating-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 80px;
-
-  .tags-container {
-    display: flex;
-    gap: 20px;
-    color: white;
-
-    span {
-      padding: 10px 20px;
-      border-radius: 10px;
-      background-color: $color-1;
-    }
-  }
-}
-
-@media screen and (max-width: 415px) {
-  .tags-rating-container {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 10px 20px;
-    gap: 25px;
-    padding-bottom: 25px;
-
-    .tags-container {
-      gap: 25px;
-
-      span {
-        font-size: 13px;
-      }
-    }
-  }
-}

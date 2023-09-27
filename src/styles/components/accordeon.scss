@@ -35,8 +35,11 @@
 
 @media screen and (max-width: 415px) {
   .accordeon-container {
+    button {
+      padding: 5px;
+    }
     h2 {
-      font-size: 20px !important;
+      font-size: 18px !important;
     }
   }
 }
